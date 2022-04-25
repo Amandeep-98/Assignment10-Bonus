@@ -1,0 +1,9 @@
+<div class="searchContainer">
+    <form>
+        <input type="text" #text placeholder="Search.." [(ngModel)]="clearInput" name="search">
+        <button type="submit" (click)="addNewItem(text.value, $event)">Add Content To List</button>
+        <div>
+            <h1 *ngIf="promiseError" style="color:red">{{promiseError}}</h1>
+        </div>
+      </form>
+</div>

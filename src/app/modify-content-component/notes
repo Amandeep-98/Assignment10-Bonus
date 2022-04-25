@@ -1,0 +1,22 @@
+<div class="continer">
+  <form [formGroup]="movieForm" (submit)="getMovieDetails($event)">     
+        <mat-form-field appearance="legacy">
+          <mat-label>Moive Name</mat-label>          
+          <input matInput type="text" class="form-control" formControlName="name" id="moiveName" aria-describedby="nameHelp" placeholder="Enter Moive Name">          
+        </mat-form-field> <br>
+        <mat-form-field appearance="legacy">
+          <mat-label>Type</mat-label>          
+          <input matInput type="text" class="form-control" formControlName="type" id="type" placeholder="type">
+        </mat-form-field> <br>
+        <mat-form-field appearance="legacy">
+          <mat-label>Image Name</mat-label>            
+            <input matInput type="text" class="form-control" formControlName="imageUrl" id="imageName" aria-describedby="nameHelp" placeholder="Image name">          
+          </mat-form-field> <br>
+          <mat-form-field appearance="legacy">
+            <mat-label>Description</mat-label>            
+            <input matInput type="text" class="form-control" formControlName="body" id="movieBody" aria-describedby="nameHelp" placeholder="Description">          
+          </mat-form-field> <br>
+        
+        <button  type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

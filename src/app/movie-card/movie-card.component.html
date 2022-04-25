@@ -1,0 +1,17 @@
+
+  
+  <div class="card">
+ <div class="name"><h4 appHoverEffect>{{ movie.name }}</h4></div>
+ <div class="body">{{ movie ? movie.body : "" }}</div>
+
+ <div class="image-center" *ngIf="movie.imageUrl; else noImage">
+    <img routerLink="/content/{{movie.id}}" [src]="movie ? movie.imageUrl : ''">
+  </div>
+  
+  <ng-template #noImage>
+      <div class="image-center">
+        <img routerLink="/content/{{movie.id}}"  src="../../assets/img/noImagepng.png" alt="">
+      </div>    
+  </ng-template> 
+ <div class="type"><span class="tagItem" appHoverEffect *ngFor="let type of movie.type">{{ type }}</span> </div>
+     </div>

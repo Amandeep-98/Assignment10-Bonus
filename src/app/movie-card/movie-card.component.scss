@@ -1,0 +1,110 @@
+.firstcard{
+    display: inline-block;
+    width: 400px;
+    border: 2px solid rgb(44, 42, 42);
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 10px;
+}
+
+.card{
+    display: inline-block;
+    width: 400px;
+    border: 1px solid rgb(44, 42, 42);
+    margin-top: 10px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 10px;   
+    
+}
+
+.drama{
+    display: inline-block;
+    width: 400px;
+    border: 1px solid rgb(44, 42, 42);
+    margin-top: 10px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 10px;
+    background-color: #d4e2ee;
+    
+}
+
+.adventure{
+    display: inline-block;
+    width: 400px;
+    border: 1px solid rgb(44, 42, 42);
+    margin-top: 10px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 10px;
+    background-color: rgb(233, 101, 101);
+    
+}
+
+.animation{
+    display: inline-block;
+    width: 400px;
+    border: 1px solid rgb(44, 42, 42);
+    margin-top: 10px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 10px;
+    background-color: rgb(122, 218, 122)
+    
+}
+
+.body{
+    height: 54px;
+}
+
+img{
+    width: 184px;
+    height: 274px;    
+}
+.image-center{
+    text-align: center;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    // width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .contentExist{
+      color: green;
+  }
+
+  .contentDoesNotExist{
+      color: red;
+  }
+
+  .type span{
+      margin-left: 10px;
+  }

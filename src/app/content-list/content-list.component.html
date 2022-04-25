@@ -1,0 +1,9 @@
+<app-modify-content-component (newItemEvent)="addItem($event)"></app-modify-content-component>
+
+<!-- <div>
+    <input type="number" #movieId placeholder="enter movie id">
+    <button (click)="getMovieContent(movieId.value)">Click</button>
+  </div> -->
+<app-movie-card *ngFor="let item of movieList; first as isFirstMovieOnList" [movie]="item"></app-movie-card>
+
+

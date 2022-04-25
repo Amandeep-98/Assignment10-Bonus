@@ -1,0 +1,32 @@
+<h2 mat-dialog-title>Movie Details</h2>
+<!-- <mat-dialog-content class="mat-typography"> -->
+<div class="continer">
+    <form [formGroup]="movieForm" (submit)="getMovieDetails()">     
+          <mat-form-field >
+            <mat-label>Moive Name</mat-label>          
+            <input matInput type="text" class="form-control" formControlName="name" [(ngModel)]="obj.name" id="moiveName" aria-describedby="nameHelp" placeholder="Enter Moive Name">          
+          </mat-form-field> <br>
+          <mat-form-field >
+            <mat-label>Type</mat-label>          
+            <input matInput type="text" class="form-control" formControlName="type" [(ngModel)]="obj.type" id="type" #id placeholder="type">
+          </mat-form-field> <br>
+          <mat-form-field >
+            <mat-label>Image Name</mat-label>            
+              <input matInput type="text" class="form-control" formControlName="imageUrl" [(ngModel)]="obj.image" id="imageName" aria-describedby="nameHelp" placeholder="Image name">          
+            </mat-form-field> <br>
+            <mat-form-field >
+              <mat-label>Description</mat-label>            
+              <input matInput type="text" class="form-control" formControlName="body" [(ngModel)]="obj.body" id="movieBody" aria-describedby="nameHelp" placeholder="Description">          
+            </mat-form-field> <br>
+          
+          <!-- <button  type="submit" class="btn btn-primary">Submit</button> -->
+          <mat-dialog-actions align="end">
+            <button mat-button mat-dialog-close>Cancel</button>
+            <button mat-button [mat-dialog-close]='obj' cdkFocusInitial 
+            (click)="getMovieDetails()"
+            >Submit</button>
+          </mat-dialog-actions>
+        </form>
+  </div>
+<!-- </mat-dialog-content> -->
+
